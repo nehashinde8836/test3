@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Detection</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(Blue-background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <!--<img class="bg" src="ai-image.png" alt="IIT kharagpur">-->
+    <nav>
+        <div class="heading">
+            <h4 style="color: white;">Image Classification</h4>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <input type="file" id="imageInput" accept="image/*">
+    <br>
+    <br>
+    <br>
+    <button id="detectButton">Detect Objects</button>
+    <br>
+    
+    <center>
+        <br>
+    <canvas id="outputCanvas"></canvas>
+    <ul id="objectList"></ul>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="script.js"></script>
+    </center>
+</body>
+</html>
